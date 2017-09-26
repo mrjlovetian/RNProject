@@ -1,0 +1,78 @@
+{
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Launch via NPM",
+                "runtimeExecutable": "npm",
+                "runtimeArgs": [
+                    "run-script",
+                    "debug"
+                ],
+                "port": 5858
+            },
+            {
+                "name": "Watson",
+                "type": "python",
+                "request": "launch",
+                "stopOnEntry": true,
+                "pythonPath": "${config:python.pythonPath}",
+                "program": "${workspaceRoot}/console.py",
+                "cwd": "${workspaceRoot}",
+                "args": [
+                    "dev",
+                    "runserver",
+                    "--noreload=True"
+                ],
+                "env": {},
+                "envFile": "${workspaceRoot}/.env",
+                "debugOptions": [
+                    "WaitOnAbnormalExit",
+                    "WaitOnNormalExit",
+                    "RedirectOutput"
+                ]
+            },
+            {
+                "name": "Debug Android",
+                "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+                "type": "reactnative",
+                "request": "launch",
+                "platform": "android",
+                "sourceMaps": true,
+                "outDir": "${workspaceRoot}/.vscode/.react"
+            },
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Launch Program",
+                "program": "${workspaceRoot}/app.js"
+            },
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Launch via NPM",
+                "runtimeExecutable": "npm",
+                "runtimeArgs": [
+                    "run-script",
+                    "debug"
+                ],
+                "port": 5858
+            },
+            {
+                "name": "Debug iOS",
+                "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+                "type": "reactnative",
+                "request": "launch",
+                "platform": "ios",
+                "sourceMaps": true,
+                "outDir": "${workspaceRoot}/.vscode/.react"
+            },
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Launch Program",
+                "program": "${file}"
+            }
+        ]
+    }
