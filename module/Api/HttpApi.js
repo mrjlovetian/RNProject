@@ -14,7 +14,6 @@ function PostReques(url, param){
 }
 
 function GetRequest(url, param){
-    console.log('到这里来看看');
     return baseHttp({
         headers: {
             'Content-Type': 'application/x-www.form-urlencoded',
@@ -27,7 +26,6 @@ function GetRequest(url, param){
 
 function baseHttp(props){
     return new Promise((resolve, reject) => {
-        console.log('网络请求进来没');
         HTTP.fetch(props.method, props.url, props.header, props.body)
         .then(res =>{
             callBack(resolve, res)
