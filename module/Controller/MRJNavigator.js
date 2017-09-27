@@ -4,6 +4,7 @@ import First from './First.js';
 import Second from './Second.js';
 import Mine from './Mine.js';
 import Building from './BuildingList.js';
+import NewBuilding from './NewBuildingList';
 
 const MRJNavigator = StackNavigator(
     {
@@ -15,6 +16,9 @@ const MRJNavigator = StackNavigator(
         },
         BuildingList:{
             screen: Building,
+        },
+        NewBuilding:{
+            screen:NewBuilding,
         },
     },
     {

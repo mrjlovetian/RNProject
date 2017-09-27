@@ -8,8 +8,8 @@ export default class First extends Component{
     }
 
     getValue(pram){
-        // console.log(pram);
-        this.props.navigation.navigate('BuildingList');
+        console.log(pram);
+        this.props.navigation.navigate('NewBuilding');
     }
 
     static navigationOptions ={

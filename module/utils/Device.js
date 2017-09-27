@@ -4,4 +4,4 @@ import {
 
 const Screen = Dimensions.get('window');
 
-export default {Screen}
+export default Screen;

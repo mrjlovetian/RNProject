@@ -39,7 +39,11 @@ function baseHttp(props){
 }
 
 function callBack(resolve, res){
-
+    if (res.data) {
+        let dataSorce = JSON.parse(res.data);
+        resolve(dataSorce);
+    }
+    
 }
 
 export default {PostReques, GetRequest};

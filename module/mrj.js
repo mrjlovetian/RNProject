@@ -19,6 +19,6 @@ const styles = StyleSheet.create({
     contoin:{
         backgroundColor:'red',
         height: 90,
-        width: Screen.Screen.width/2.0
+        width: Screen.width/2.0
     }
 })
